@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-
 if number < 0:
-    ran = (number * -1) % 10 * -1
+    ran = number * -1
+    ran = ran % 10
+    ran = ran * -1
 else:
     ran = number % 10
 print ("Last digit of {}".format(number), end=' ')
