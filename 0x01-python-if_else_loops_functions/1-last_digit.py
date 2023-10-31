@@ -12,5 +12,5 @@ if ran > 5:
     print("is {} and is greater than 5".format(ran))
 elif ran == 0:
     print("is {} and is 0".format(ran))
-elif ran < 6 and num != 0:
+elif ran < 6 and ran != 0:
     print("is {} and is less than 6 and not 0".format(ran))
