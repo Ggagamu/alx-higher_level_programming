@@ -7,7 +7,7 @@ if number < 0:
     ran = ran * -1
 else:
     ran = number % 10
-print ("Last digit of {}".format(number), end=' ')
+print("Last digit of {}".format(number), end=' ')
 if ran > 5:
     print("is {} and is greater than 5".format(ran))
 elif ran == 0:
