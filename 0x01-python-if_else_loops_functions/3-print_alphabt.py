@@ -2,4 +2,4 @@
 for u in range(97, 123):
     if u == 101 or u == 113:
         continue
-    print("{:c}".format(u), end='') #Unicode code point
+    print("{:c}".format(u), end='')
