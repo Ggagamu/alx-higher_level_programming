@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import task-7
+import task_7
