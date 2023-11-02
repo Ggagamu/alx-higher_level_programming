@@ -6,4 +6,3 @@ if __name__ == "__main__":
     for i in range(1, arguments):
         sum_args += int(argv[i])
     print(sum_args)
-
