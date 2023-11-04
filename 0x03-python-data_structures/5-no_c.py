@@ -5,6 +5,6 @@ def no_c(my_string):
     else:
         new_string = []
         for char in my_string:
-            if char.lower() != 'c' or char.upper() != 'C':
+            if char.lower() != 'c' and char.upper() != 'C':
                 new_string.append(char)
         return ''.join(new_string)
