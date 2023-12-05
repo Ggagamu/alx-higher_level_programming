@@ -1,0 +1,85 @@
+The ``1-my_list`` module documentation
+======================================
+
+
+Importing the function:
+        >>> MyList = __import__("1-my_list").MyList
+
+Checking module docstring:
+         >>> m_doc = __import__("1-my_list").__doc__
+         >>> len(m_doc) > 1
+         True
+
+Checking class docstring:
+         >>> c_doc = __import__("1-my_list").MyList.__doc__
+         >>> len(c_doc) > 1
+         True
+
+Checking method docstring:
+	 >>> meth_doc = __import__("1-my_list").MyList.print_sorted.__doc__
+	 >>> len(meth_doc) > 1
+	 True
+
+Checking MyList inheritance from list:
+	 >>> issubclass(MyList, list)
+	 True
+
+Checking empty list:
+	 >>> lst = MyList()
+	 >>> lst.print_sorted()
+	 []
+
+Checking that appendng works:
+	 >>> lst.append(10)
+	 >>> lst.append(20)
+	 >>> lst.append(30)
+	 >>> lst.append(40)
+	 >>> print(lst)
+	 [10, 20, 30, 40]
+
+Checking list sorted:
+	 >>> lst.print_sorted()
+	 [10, 20, 30, 40]
+
+Checking reversed order list:
+	 >>> lst = MyList()
+	 >>> lst.append(40)
+	 >>> lst.append(30)
+	 >>> lst.append(20)
+	 >>> lst.append(10)
+	 >>> print(lst)
+	 [40, 30, 20, 10]
+	 >>> lst.print_sorted()
+	 [10, 20, 30, 40]
+	 >>> print(lst)
+	 [40, 30, 20, 10]
+
+Checking one negative number:
+	 >>> lst.append(-10)
+	 >>> lst.append(50)
+	 >>> print(lst)
+	 [40, 30, 20, 10, -10, 50]
+	 >>> lst.print_sorted()
+	 [-10, 10, 20, 30, 40, 50]
+	 >>> print(lst)
+	 [40, 30, 20, 10, -10, 50]
+
+Checking all negative numbers:
+	 >>> lst = MyList()
+	 >>> lst.append(-10)
+	 >>> lst.append(-12)
+	 >>> lst.append(-70)
+	 >>> lst.append(-20)
+	 >>> lst.append(-80)
+	 >>> print(lst)
+	 [-10, -12, -70, -20, -80]
+	 >>> lst.print_sorted()
+	 [-10, -80, -70, -20, -12]
+	 >>> print(lst)
+         [-10, -12, -70, -20, -80]
+
+Checking multiple arguments:
+	 >>> lst.print_sorted(10)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: print_sorted() takes 1 positional argument but 2 were given
