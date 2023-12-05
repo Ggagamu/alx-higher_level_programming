@@ -13,7 +13,11 @@ def append_after(filename="", search_string="", new_string=""):
     """
 
 
-    with open(filename, 'r', encoding="utf-8") as fl:
+    with open(filename, 'r+', encoding="utf-8") as fl:
         for current_string in fl:
             if search_string in current_string:
                 fl.write(new_string)
+            else:
+                continue
+    fl.close()
+    return fl
