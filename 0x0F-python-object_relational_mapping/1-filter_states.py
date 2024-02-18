@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Modile for a script thatlists all states with a name starting with upper N from the database hbtn_0e_0_usa"""
+"""Module for a script that lists all states with a name 
+starting with upper N from the database hbtn_0e_0_usa"""
 
 if __name__ == '__main__':
 
