@@ -10,5 +10,5 @@ import requests
 if __name__ == '__main__':
     d = requests.get('https://intranet.hbtn.io/status')
     print('Body response:')
-    print(f"\t- type: {type(data.text)}")
-    print(f"\t- content: {data.text}")
+    print(f"\t- type: {type(d.text)}")
+    print(f"\t- content: {d.text}")
